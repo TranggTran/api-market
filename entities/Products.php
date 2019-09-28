@@ -27,7 +27,7 @@
 		// read
 		public function getProducts(){
 			// select all query
-			$query = "SELECT * FROM products";
+			$query = "SELECT * FROM $this->table_name";
 			
 			$stmt = $this->conn->prepare($query);
 			
